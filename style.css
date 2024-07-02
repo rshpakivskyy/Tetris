@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(18, 13, 164), rgb(98, 255, 0));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tetris{
+   border: 5px solid orange;
+   display: grid;
+   grid-template-columns: repeat(10, auto);
+}
+.tetris div{
+    height: min(4vh, 7vw);
+    width: min(4vh, 7vw);
+    background: rgba(211, 211, 211, 0.4);
+    box-shadow: inset 2px 2px 2px rgb(221, 54, 54),
+                inset -2px -2px 2px rgb(62, 0, 139);
+}
+
+.tetris .O{
+    background: red;
+}
+
+.tetris .L{
+    background: green;
+}
+
+.tetris .J{
+    background: purple;
+}
+
+.tetris .T{
+    background: blue;
+}
+
+.tetris .I{
+    background: yellow;
+}
+
+
+.tetris .S{
+    background: aqua;
+}
+
+.tetris .Z{
+    background: brown;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.scoreboard span {
+    font-size: 48px;
+    color: #000;
+}
