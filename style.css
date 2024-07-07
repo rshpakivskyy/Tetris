@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-tetromino {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-tetromino-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.next-tetromino-grid {
+    display: grid;
+    border: 2px solid white;
+    grid-template-columns: repeat(4, 20px);
+    grid-template-rows: repeat(4, 20px);
+    gap: 1px;
+    background-color: #333;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.next-tetromino-grid div {
+    width: 20px;
+    height: 20px;
+    background-color: #444;
+}
+.tetris {
+    display: grid;
+    border: 2px solid white;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 1px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.tetris div {
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+}
+
+            .tetris .O {
+            background: red;
+            }
+
+            .tetris .L {
+            background: green;
+            }
+
+            .tetris .J {
+            background: purple;
+            }
+
+            .tetris .T {
+            background: blue;
+            }
+
+            .tetris .I {
+            background: yellow;
+            }
+
+            .tetris .S {
+            background: aqua;
+            }
+
+            .tetris .Z {
+            background: brown;
+            }
+
+.game-info {
+    min-width: 200px;
+    border: 2px solid white;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.game-info div {
+    margin-bottom: 10px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+.btn-restart {
+    cursor: pointer;
+    width: 400px;
+    height: 200px;
+    font-size: 80px;
+    border-radius: 20px;
+    border: 15px solid white;
+    background: #444;
+    color: #fff;
+}
+
+.restart-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-restart-permanent {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-restart-permanent:hover {
+    background-color: red;
+}
+
+.btn-restart:hover {
+    background-color: green;
+}
+
+.pause {
+    font-size: 16px;
+    color: green;
+    margin-top: 10px;
+
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-control {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.btn-control:hover {
+    background-color: #555;
+}
